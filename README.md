@@ -21,4 +21,4 @@
    - compilar y comprimir el archivo
    > stylus archivo.styl --compress
    - activar un watcher para no tener que hacerlo manualmente
-   > Stylus archivo.styl -w
+   > Stylus -w archivo.styl -o css/archivo.css
