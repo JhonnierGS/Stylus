@@ -6,6 +6,8 @@
 # Tabla de contenido
 
  - [Compilación en Stylus](#Compilación-de-Stylus-a-CSS)
+ - [Sintaxis](#Sintaxis)
+ - [Anidaciones](#Anidaciones)
 
 # Compilación de Stylus a CSS
 <p> Hay muchas formas de compilar Stylus, se puede con <strong>UI/Compiladores</strong>, editor de codigo <strong>Visual estudio code</strong> o desde la <strong>terminal de comando</strong></p>
