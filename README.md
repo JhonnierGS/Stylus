@@ -8,9 +8,9 @@
 <p> Hay muchas formas de compilar Stylus, se puede con <strong>UI/Compiladores</strong>, editor de codigo <strong>Visual estudio code</strong> o desde la <strong>terminal de comando</strong></p>
 
  1. <h4>UI/compiladores</h4>
-   - Codekit
-   - Prepos
-   - Webpack
+   - Codekit (macOS)
+   - Prepos (Mac, Windows & Linux)
+   - Webpack (Mac, Windows & Linux)
  2. <h4>VS Code</h4>
    - Con VS Code se pueden usar varias extensiónes como <strong>Live Stylus Compiler</strong>
  3. <h4>Terminal de comando</h4>
