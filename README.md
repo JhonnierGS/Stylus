@@ -8,6 +8,8 @@
  - [Compilación en Stylus](#Compilación-de-Stylus-a-CSS)
  - [Sintaxis](#Sintaxis)
  - [Anidaciones](#Anidaciones)
+ - [Variables](#Variables)
+
 
 # Compilación de Stylus a CSS
 <p> Hay muchas formas de compilar Stylus, se puede con <strong>UI/Compiladores</strong>, editor de codigo <strong>Visual estudio code</strong> o desde la <strong>terminal de comando</strong></p>
@@ -86,9 +88,27 @@ Gracias a las anidaciones podemos añadir propiedades a través de la sintaxis d
   ``` 
  <p> Por buenas practicas nunca se debe anidar mas de 3 veces</p>
  
+# Variables
+Una de las mayores ventajas que tienen los preprocesadores son las variables, estas nos permiten controlar un entorno porque podemos manipular un entorno. Esto quiere decir que podemos cambiar muchas cosas a través de muchas variables.
 
+ - Para declarar una variable en Stylus solo se utiliza <b>"="</b>
+ 
+ ```Stylus
+  // Variables
+  font-size-normal = 18px
+  font-size-small = font-size-normal - 2px
+  font-size-paragraph = font-size-normal
 
+// Texts
+p
+  font-size font-size-paragraph
 
+span
+  font-size font-size-normal
+
+  &.small
+    font-size font-size-small
+  ``` 
 
 
 
