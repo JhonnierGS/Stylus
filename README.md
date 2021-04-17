@@ -1,5 +1,5 @@
 # Stylus
-# Introducción al curso
+# Introducción
 * Stylus es un pre-procesador de css. Lo que quire decir que este código se copila para luego guardarlo en un archivo CSS. Por lo tanto se traduce del lenguaje de Stylus al lenguaje de CSS.
 * Stylus trabaja con NodeJS
 
