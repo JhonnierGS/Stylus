@@ -22,3 +22,21 @@
    > stylus archivo.styl --compress
    - activar un watcher para no tener que hacerlo manualmente
    > Stylus -w archivo.styl -o css/archivo.css
+ 
+ # Sintaxis
+  - Stylus es un preprocesador que difiere un poco del resto (SASS, LESS) por su sintaxis
+  - Su sintaxis es anidada.
+  - En stylus no es necesario usar los brackets <b>{}</b> y punto y coma <b>;</b> pero para tener mejores practicas deberian ser usadas
+  <h3>Stylus</h3>
+  
+  ```Stylus
+  body
+  background: lightyellow
+  ```
+  <h3>CSS</h3>
+  
+  ```CSS
+  body{
+   background: lightyellow;
+  }
+  ```
