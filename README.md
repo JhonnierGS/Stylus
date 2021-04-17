@@ -3,6 +3,9 @@
 * Stylus es un pre-procesador de css. Lo que quire decir que este código se copila para luego guardarlo en un archivo CSS. Por lo tanto se traduce del lenguaje de Stylus al lenguaje de CSS.
 * Stylus trabaja con NodeJS
 
+# Tabla de contenido
+
+ - [Compilación en Stylus](#Compilación-de-Stylus-a-CSS)
 
 # Compilación de Stylus a CSS
 <p> Hay muchas formas de compilar Stylus, se puede con <strong>UI/Compiladores</strong>, editor de codigo <strong>Visual estudio code</strong> o desde la <strong>terminal de comando</strong></p>
