@@ -40,3 +40,69 @@
    background: lightyellow;
   }
   ```
+# Anidaciones
+Gracias a las anidaciones podemos añadir propiedades a través de la sintaxis de Stylus. Además, esto nos permite referenciar al padre.
+
+ - sub
+ <p> Hacemos referencia a todos los elementos que estén dentro de las etiquetas padres </p>
+ 
+  ```Stylus
+ body, .light-theme
+  background lightyellow
+  color #2c2c2c
+
+  .primer-hijo
+    margin-bottom 24px
+  ```
+ - child
+ <p>Con el uso de <b>“>”</b> hacemos referencia a los hijos directos del elemento padre </p>
+ 
+  ```Stylus
+ body, .light-theme
+  background lightyellow
+  color #2c2c2c
+
+  > .primer-hijo
+    margin-bottom 24px
+  ```
+ - reference
+ <p>Con el uso de <b>“&”</b> hacemos referencia al nombre del elemento padre </p>
+ 
+  ```Stylus
+  psudoe-element
+  width 300px
+
+  &:before
+    content 'hola'
+  
+  .ie-8 &
+    &:before
+      content 'ciao'
+  ``` 
+ <p> Por buenas practicas nunca se debe anidar mas de 3 veces</p>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
