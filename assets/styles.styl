@@ -1,4 +1,19 @@
-font-size = 16px
+@import "abstracts/_variables.styl";
+@import "abstracts/_mixin.styl";
+@import "abstracts/_function.styl";
+
+@import "layout/_blocks.styl";
+@import "layout/_site.styl";
+
+@import "base/_buttons.styl";
+@import "base/_links.styl";
+@import "base/_tables.styl";
+@import "base/_typography.styl";
+
+@import "components/_grid.styl";
+@import "components/_utilities.styl";
+
+
 
 
 
@@ -12,7 +27,7 @@ body
 
 
 body, .light-theme
-    background lightyellow
+    background color-claro
     color #2c2c2c
 
     .primer-hijo
@@ -25,3 +40,8 @@ body, .light-theme
 
     > .primer-hijo
         margin-bottom 24px
+
+
+.container
+    mixin-max-width()
+    text-align: center
