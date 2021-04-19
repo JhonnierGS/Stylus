@@ -9,6 +9,8 @@
  - [Sintaxis](#Sintaxis)
  - [Anidaciones](#Anidaciones)
  - [Variables](#Variables)
+ - [@import](#@import)
+ - [@Mixin](#@Mixin)
 
 
 # Compilación de Stylus a CSS
@@ -110,16 +112,79 @@ span
     font-size font-size-small
   ``` 
 
+# @import
+Una de las ventajas de los preprocesadores es que podemos crear diferentes parciales(archivos, carpetas) para organizar nuestro código. 
+Cuando creamos un parcial debemos tener un _, lo que quiere decir que ese archivo no se va a compilar y va a ser llamado en nuestro archivo principal con import.
 
+ ```Stylus
+   @import "abstracts/_variables.styl";
+   @import "abstracts/_mixin.styl";
+   @import "abstracts/_function.styl";
 
+   @import "layout/_blocks.styl";
+   @import "layout/_site.styl";
 
+   @import "base/_buttons.styl";
+   @import "base/_links.styl";
+   @import "base/_tables.styl";
+   @import "base/_typography.styl";
 
+   @import "components/_grid.styl";
+   @import "components/_utilities.styl";
+  ```
 
+# Mixin
+Un mixin nos permite reutilizar valores dentro del mismo CSS
+Se declara facilmente con su nombre, y como buena práctica usamos <b>minix-</b> antes del nombre que queremos darle
 
+ <h3>Stylus</h3>
+  
+  ```Stylus
+  mixin-max-width()
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+   
+  .container
+    mixin-max-width()
+    text-align: center
+  ```
+  <h3>CSS</h3>
+  
+  ```CSS
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+  ```
+ <h3>Mixins parametricos</h3>
+ 
+ - Para dar parámetros a un mixin lo usamos dentro del paréntesis:
+ 
+ ```Stylus
+ mixin-max-width(width)
+  max-width width
+  margin-left auto
+  margin-right auto
 
+ .container
+  mixin-max-width(800px)
+ ```
+ - Para usar valores por defecto igualamos el parametro al valor que queremos:
 
+ ```Stylus
+ page-max-width = 1024px
 
+ mixin-max-width(width = page-max-width)
+  mixin-max-width()
+  margin-left auto 
+  margin-right auto
 
+ .container
+   mixin-max-width(800px)
+ ```
 
 
 
